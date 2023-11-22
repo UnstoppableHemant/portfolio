@@ -13,7 +13,7 @@ const SideNav = ({isSideNavOpen}) => {
                     <li>Contact</li>
                 </ul>
             </div>
-            <div className="flex md:flex-col gap-5 justify-center">
+            <div className="flex md:flex-col gap-5 justify-center pb-10 md:pb-0"> 
                 <a target="_blank" href="mailto:iamhemant2004@gmail.com"><LuMails className="h-6 w-6" title="iamhemant2004@gmail.com"/></a>
                 <a target="_blank" href="tel:+91-8076123141"><LuPhoneCall className="h-6 w-6" title="+91-8076123141"/></a>
                 <a target="_blank" href="https://www.linkedin.com/in/03-hemant-k/"><BsLinkedin className="h-6 w-6" title="LinkedIn.com"/></a>
