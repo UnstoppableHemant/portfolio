@@ -14,9 +14,12 @@ const App = () => {
     const toggleSideNav = () => {
         setIsSideNavOpen(!isSideNavOpen);
     };
+    const closeSideNav = () => {
+        setIsSideNavOpen(false);
+    };
     return (
         <div className="flex flex-col w-full h-screen">
-            <Header toggleSideNav={toggleSideNav} />
+            <Header toggleSideNav={toggleSideNav} closeSideNav={closeSideNav} />
             <div className="block md:flex w-full height-full px-1">
                 <SideNav isSideNavOpen={isSideNavOpen} toggleSideNav={toggleSideNav} />
                 <Routes>

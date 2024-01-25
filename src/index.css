@@ -37,6 +37,30 @@ body{
   padding: 5px;
 }
 
+.project-box{
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+
+.project-box div .view-projects{
+  background-color: #5781ff;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.project-box:hover{
+  background-color: #5781ff;
+  color: black;
+}
+
+.project-box:hover div .view-projects{
+  background-color: black;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
   width:8px;

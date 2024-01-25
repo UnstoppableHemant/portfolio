@@ -11,7 +11,7 @@ const Education = () => {
                 <div className="mx-auto gap-3 flex flex-col md:w-2/3">
                     <div className="bg-black text-white px-6 py-4 rounded-lg flex flex-col gap-2">
                         <h3 className="text-2xl font-semibold">Bachelor of Computer Applications (BCA)</h3>
-                        <p>Chandigarh University (Jan 2022 - Jan 2025)</p>
+                        <p>Chandigarh University (2022 - 2025)</p>
                         <button className="px-3 py-1 bg-[#5781ff] rounded-lg w-32">Pursuing</button>
                     </div>
                     <div className="bg-black text-white px-6 py-4 rounded-lg flex flex-col gap-2">
