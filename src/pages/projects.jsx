@@ -24,7 +24,8 @@ const Projects = () => {
                         <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
                     </div>
                     <div className="py-5">
-                        {projects.map((item, index) => {
+                        <h1 className="text-5xl text-center mt-10">Coming Soon......</h1>
+                        {/* {projects.map((item, index) => {
                             return (
                                 <>
                                     <div key={index} className={`flex gap-2 flex-col-reverse project-box ${(index % 2) === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
@@ -38,7 +39,7 @@ const Projects = () => {
                                     <br />
                                 </>
                             )
-                        })}
+                        })} */}
                     </div>
                 </section>
             </div>
