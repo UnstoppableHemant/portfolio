@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from "./components/header";
 import SideNav from "./components/sideNav";
 import Home from "./pages/home";
@@ -17,17 +17,20 @@ const App = () => {
     const closeSideNav = () => {
         setIsSideNavOpen(false);
     };
+    console.log(isSideNavOpen);
     return (
         <div className="flex flex-col w-full h-screen">
             <Header toggleSideNav={toggleSideNav} closeSideNav={closeSideNav} />
             <div className="block md:flex w-full height-full px-1">
                 <SideNav isSideNavOpen={isSideNavOpen} toggleSideNav={toggleSideNav} />
-                <Routes>
-                    <Route path="/" element={<Home/>} />
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/projects" element={<Projects/>} />
-                    <Route path="/services" element={<Services/>} />
-                </Routes>
+                {isSideNavOpen ? '' :
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/services" element={<Services />} />
+                    </Routes>
+                }
             </div>
         </div>
     )
