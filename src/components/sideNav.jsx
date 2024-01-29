@@ -13,7 +13,7 @@ const SideNav = ({ isSideNavOpen, toggleSideNav }) => {
                 <ul className="flex flex-col md:hidden gap-5 text-lg">
                     <li onClick={() => {navigate("/about"); toggleSideNav();}}>About</li>
                     <li onClick={() => {navigate("/projects"); toggleSideNav();}}>Projects</li>
-                    <li onClick={() => {navigate("/services"); toggleSideNav();}}>Services</li>
+                    {/* <li onClick={() => {navigate("/services"); toggleSideNav();}}>Services</li> */}
                 </ul>
             </div>
             <div className="flex md:flex-col gap-5 justify-center pb-10 md:pb-0">
