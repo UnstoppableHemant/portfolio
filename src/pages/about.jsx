@@ -30,8 +30,8 @@ const About = () => {
                             </p>
                             <br />
                             <div className="my-1 font-semibold">
-                                <a target="_blank" href="tel:+91-8076123141"><button className="px-4 py-2 m-1 act-btn">Contact : &nbsp; +91 - 8076123141</button></a>
-                                <a target="_blank" href="mailto:iamhemant2004@gmail.com"><button className="px-4 py-2 m-1 act-btn">Email : &nbsp; iamhemant2004@gmail.com</button></a>
+                                <button className="px-4 py-2 m-1 act-btn"><a target="_blank" href="tel:+91-8076123141">Contact : &nbsp; +91 - 8076123141</a></button>
+                                <button className="px-4 py-2 m-1 act-btn"><a target="_blank" href="mailto:iamhemant2004@gmail.com">Email : &nbsp; iamhemant2004@gmail.com</a></button>
                                 <button className="px-4 py-2 m-1 act-btn">Place : &nbsp; Delhi, India - 110053</button>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 import { getDocs, collection } from "firebase/firestore";
 import db from ".";
 
-export const fetchItems = async (collectionName) => {
+export const fetchCollections = async (collectionName) => {
     const doc_refs = await getDocs(collection(db, collectionName));
 
     const res = []

@@ -1,12 +1,14 @@
 import { FaLaptopCode } from "react-icons/fa6";
-import { fetchItems } from "../firebase/firebaseCalls";
+import { fetchCollections } from "../firebase/firebaseCalls";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const navigate = useNavigate();
 
     const fetchData = async () => {
-        const res = await fetchItems("projects")
+        const res = await fetchCollections("projects");
         setProjects([...res])
     }
 
@@ -24,22 +26,22 @@ const Projects = () => {
                         <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
                     </div>
                     <div className="py-5">
-                        <h1 className="text-5xl text-center mt-10">Coming Soon......</h1>
-                        {/* {projects.map((item, index) => {
+                        {/* <h1 className="text-5xl text-center mt-10">Coming Soon......</h1> */}
+                        {projects.map((item, index) => {
                             return (
                                 <>
-                                    <div key={index} className={`flex gap-2 flex-col-reverse project-box ${(index % 2) === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
-                                        <div className="md:w-2/3 font-semibold">
+                                    <div key={index} className={`flex gap-8 flex-col-reverse project-box ${(index % 2) === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
+                                        <div className="md:w-3/5 font-semibold">
                                             <h2 className="text-xl">{(index + 1) + ") " + item.name}</h2><br />
-                                            <p className="text-justify">{item.desc.length > 550 ? item.desc.slice(0, 550) + " ...more" : item.desc}</p><br />
-                                            <button className="view-projects">View Details</button>
+                                            <p className="text-justify">{item.desc.length > 490 ? item.desc.slice(0, 490) + " ...more" : item.desc}</p><br />
+                                            <button className="view-projects" onClick={() => navigate(`/projects/${item.id}`, { state: item })}>View Details</button>
                                         </div>
-                                        <div className="md:w-1/3"><img className="mx-auto" src="" /></div>
+                                        <div className="md:w-2/5 flex justify-center"><img className="my-auto rounded" src={item.mainImgURI} /></div>
                                     </div>
                                     <br />
                                 </>
                             )
-                        })} */}
+                        })}
                     </div>
                 </section>
             </div>
