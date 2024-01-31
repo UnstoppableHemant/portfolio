@@ -14,9 +14,7 @@ const Header = ({toggleSideNav, closeSideNav}) => {
                 <ul className="flex gap-5 text-lg">
                     <li className='font-semibold' onClick={() => navigate("/about")}>About</li>
                     <li className='font-semibold' onClick={() => navigate("/projects")}>Projects</li>
-                    <li className='font-semibold' onClick={() => navigate("/services")}>Services</li>
-                    {/* <li>About</li>
-                    <li>About</li> */}
+                    {/* <li className='font-semibold' onClick={() => navigate("/services")}>Services</li> */}
                 </ul>
             </div>
         </div>

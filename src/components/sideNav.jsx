@@ -8,7 +8,7 @@ import { SiFreelancer, SiUpwork } from "react-icons/si";
 const SideNav = ({ isSideNavOpen, toggleSideNav }) => {
     const navigate = useNavigate();
     return (
-        <div className={`${isSideNavOpen ? 'flex flex-col' : 'hidden'} md:flex md:flex-col justify-between bg-yellow-300 h-full px-6 md:px-4 py-10 w-full md:w-16 fixed md:static`}>
+        <div className={`${isSideNavOpen ? 'flex flex-col' : 'hidden'} md:flex md:flex-col justify-between bg-yellow-300 h-full px-6 md:px-3 py-10 w-full md:w-16 fixed md:static`}>
             <div className="mt-10">
                 <ul className="flex flex-col md:hidden gap-5 text-lg">
                     <li onClick={() => {navigate("/about"); toggleSideNav();}}>About</li>

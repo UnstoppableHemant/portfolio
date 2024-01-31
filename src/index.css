@@ -60,16 +60,19 @@ body{
   background-color: black;
 }
 
+.project::-webkit-scrollbar{
+  height: 8px;
+}
+
+.project::-webkit-scrollbar-thumb{
+  background: #5781ff; 
+}
 
 /* width */
 ::-webkit-scrollbar {
   width:8px;
 }
 
-/* ::-webkit-scrollbar-track {
-  background: #b0b0b0;
-} */
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: black; 

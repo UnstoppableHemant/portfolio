@@ -33,10 +33,12 @@ const Projects = () => {
                                     <div key={index} className={`flex gap-8 flex-col-reverse project-box ${(index % 2) === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                                         <div className="md:w-3/5 font-semibold">
                                             <h2 className="text-xl">{(index + 1) + ") " + item.name}</h2><br />
+                                            <p className="text-justify">{item.skills.join(', ')}</p><br />
                                             <p className="text-justify">{item.desc.length > 490 ? item.desc.slice(0, 490) + " ...more" : item.desc}</p><br />
+                                            {/* {item.desc.length > 490 ? item.desc.slice(0, 490) + " ...more" : item.desc} */}
                                             <button className="view-projects" onClick={() => navigate(`/projects/${item.id}`, { state: item })}>View Details</button>
                                         </div>
-                                        <div className="md:w-2/5 flex justify-center"><img className="my-auto rounded" src={item.mainImgURI} /></div>
+                                        <div className="md:w-2/5 flex justify-center">{item.mainImgURI != "" ? <img className="my-auto rounded" src={item.mainImgURI} /> : <p>Images Restricted</p> }</div>
                                     </div>
                                     <br />
                                 </>
