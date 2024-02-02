@@ -1,6 +1,7 @@
 import SharePoint_Logo from "../assets/img/Skills_Tools/ms-sharepoint-online.png";
 import PowerApps_Logo from "../assets/img/Skills_Tools/ms-powerapps.png";
 import PowerAutoamte_Logo from "../assets/img/Skills_Tools/ms-powerautomate.png";
+import Resume from "../assets/Resume.pdf";
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -20,8 +21,9 @@ const Home = () => {
                         Power Automate Developer.
                     </h3>
                     <br/>
-                    <div>
+                    <div className="flex gap-2">
                         <button className="px-4 py-2 act-btn" onClick={() => {navigate("/about")}}>About Me</button>
+                        <button className="px-4 py-2 act-btn"><a href={Resume} target="_blank">Resume</a></button>
                     </div>
                 </div>
                 <div className="mt-5 md:py-10 px-5 lg:w-1/2 md:w-1/3 ">
