@@ -20,8 +20,8 @@ const SideNav = ({ isSideNavOpen, toggleSideNav }) => {
                 <a target="_blank" href="mailto:iamhemant2004@gmail.com"><LuMails className="act-links h-8 w-8" title="iamhemant2004@gmail.com" /></a>
                 <a target="_blank" href="tel:+91-8076123141"><LuPhoneCall className="act-links h-8 w-8" title="+91-8076123141" /></a>
                 <a target="_blank" href="https://www.linkedin.com/in/03-hemant-k/"><BsLinkedin className="act-links h-8 w-8" title="LinkedIn.com" /></a>
-                {/* <a target="_blank" href="https://www.freelancer.com/u/iamhemant2004"><SiFreelancer className="act-links h-8 w-8" title="Freelance.com" /></a>
-                <a target="_blank" href="https://www.upwork.com/freelancers/~012f6e12ec5cd40acd"><SiUpwork className="act-links h-8 w-8" title="Upwork.com" /></a> */}
+                <a target="_blank" href="https://www.freelancer.com/u/iamhemant2004"><SiFreelancer className="act-links h-8 w-8" title="Freelance.com" /></a>
+                <a target="_blank" href="https://www.upwork.com/freelancers/hemanth3"><SiUpwork className="act-links h-8 w-8" title="Upwork.com" /></a>
             </div>
         </div>
     )
